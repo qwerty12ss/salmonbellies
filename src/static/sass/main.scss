@@ -1,0 +1,21 @@
+@import 'global/var.scss';
+@import 'global/fonts.scss';
+@import 'global/mixins.scss';
+@import 'global/libs.scss';
+
+.slider {
+    width: 600px;
+    height: 400px;
+}
+
+.slider-item {
+    background-color: red;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}
+
+.slider-item:nth-of-type(4) {
+    background-color: yellow;
+
+}

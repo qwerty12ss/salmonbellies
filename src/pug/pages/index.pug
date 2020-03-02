@@ -1,0 +1,52 @@
+doctype html
+
+mixin nav-item(text)
+    li.header-nav__item
+        a.header-nav__link(href="#")= text
+    
+mixin lang-choice(lang)
+    li.header__lang-list
+        a.header__lang-btn(href="#")= lang
+
+html(lang="ru-RU")
+    head
+        title Salmonbellies
+        link(rel='stylesheet', href="static/css/main.css")
+    body
+        header.header
+            .header__top
+                nav.header-nav
+                    ul.header-nav__list
+                        +nav-item("Our products")
+                        +nav-item("Recepies")
+                        +nav-item("Services")
+                        +nav-item("The promise")
+                        +nav-item("Origin")
+                        +nav-item("Markets")
+                        +nav-item("CSR")
+                        +nav-item("Company")
+                        +nav-item("Contacts")
+                .header-lang
+                    ul.header-lang__list
+                        +lang-choice("English")
+                        +lang-choice("Russian")
+                        +lang-choice("Chinese")
+                    button.header-lang__pd-btn
+            .header__bottom
+                .header-logo
+                    img.header-logo__img(src="#" width="132" height="77")
+                    h1.header-logo__header Salmonbellies AS
+                    p.header-logo__tagline Trout is the new salmon
+                .header__desc
+                    p Salmonbellies and Lyxfish commit to sell at NO higer prices then quoted from out partner Kalaneuvos 
+        
+        main.main-content
+            section.main-product
+                h2.block-header(class="main-prod__header") Main fish products
+                p.main-prod__desc The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus
+                 
+
+
+        script(src='static/js/libs.min.js')
+        script(src='static/js/main.js')
+    

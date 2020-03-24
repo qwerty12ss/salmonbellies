@@ -5,46 +5,270 @@
     <link rel="stylesheet" href="static/css/main.css">
   </head>
   <body>
-    <header class="header">
-      <div class="header__top">
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Our products</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Recepies</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Services</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">The promise</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Origin</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Markets</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">CSR</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Company</a></li>
-            <li class="header-nav__item"><a class="header-nav__link" href="#">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header-lang">
-          <ul class="header-lang__list">
-            <li class="header__lang-list"><a class="header__lang-btn" href="#">English</a></li>
-            <li class="header__lang-list"><a class="header__lang-btn" href="#">Russian</a></li>
-            <li class="header__lang-list"><a class="header__lang-btn" href="#">Chinese</a></li>
-          </ul>
-          <button class="header-lang__pd-btn"></button>
+    <header class="page-header page-header--index">
+      <div class="page-header__center-wrapper">
+        <div class="page-header__top">
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Our products</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Recepies</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Services</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">The promise</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Origin</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Markets</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">CSR</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Company</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header-lang">
+            <ul class="header-lang__list">
+              <li class="header-lang__item"><a class="header-lang__link" href="#">English</a></li>
+            </ul>
+            <button class="header-lang__pd-btn"></button>
+          </div>
         </div>
-      </div>
-      <div class="header__bottom">
-        <div class="header-logo"><img class="header-logo__img" src="#" width="132" height="77">
-          <h1 class="header-logo__header">Salmonbellies AS</h1>
-          <p class="header-logo__tagline">Trout is the new salmon</p>
-        </div>
-        <div class="header__desc">
-          <p>Salmonbellies and Lyxfish commit to sell at NO higer prices then quoted from out partner Kalaneuvos </p>
+        <div class="page-header__bottom">
+          <div class="page-header__logo"><img class="page-header__logo-img" src="static/img/logo.svg" width="132" height="119">
+            <h1 class="page-header__logo-header">Salmonbellies AS</h1>
+            <p class="page-header__logo-tagline">Trout is the new salmon</p>
+          </div>
+          <div class="page-header__desc">
+            <p>Salmonbellies and Lyxfish commit to sell at NO higer prices then quoted from out partner Kalaneuvos </p>
+          </div>
         </div>
       </div>
     </header>
     <main class="main-content">
-      <section class="main-product">
-        <h2 class="block-header main-prod__header">Main fish products</h2>
-        <p class="main-prod__desc">The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus</p>
+      <section class="main-prod">
+        <div class="main-prod__center-wrapper">
+          <h2 class="main-prod__header">Main fish products</h2>
+          <p class="main-prod__desc">The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus</p>
+          <ul class="main-prod__card-list">
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-1@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Trout whole</h3>
+                  <h3 class="main-prod__card-header">Oncorhynchus mikiss</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-2@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Trout fillet</h3>
+                  <h3 class="main-prod__card-header">Oncorhynchus mikiss</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-3@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Salmon whole</h3>
+                  <h3 class="main-prod__card-header">Salmo salar</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-4@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Salmon c-cut fillet</h3>
+                  <h3 class="main-prod__card-header">Salmo salar</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-5@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Whitefish</h3>
+                  <h3 class="main-prod__card-header">Coregonus lavaretus</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-6@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Whitefish fillet without</h3>
+                  <h3 class="main-prod__card-header">skin and scaled</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-7@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Farmed brown trout</h3>
+                  <h3 class="main-prod__card-header">Salmo trutta</h3></a></article>
+            </li>
+            <li>
+              <article class="main-prod__card"><a class="main-prod__card-wrapper-link" href="#"><img class="main-prod__card-img" src="static/img/main-prod-card-img-8@1x.png" width="246" height="154">
+                  <h3 class="main-prod__card-header">Farmed brown trout fillet</h3>
+                  <h3 class="main-prod__card-header">Salmo trutta</h3></a></article>
+            </li>
+          </ul><a class="main-prod__all-prod-link" href="#">View all product</a>
+        </div>
+      </section>
+      <section class="brochures">
+        <div class="brochures__center-wrapper">
+          <h2 class="brochures__header">Our brochures</h2>
+          <ul class="brochures__link-list">
+            <li class="brochures__link"><a href="#">Chinese version download</a></li>
+            <li class="brochures__link"><a href="#">English version download</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="certifications">
+        <div class="certifications__center-wrapper">
+          <h2 class="certifications__header">Salmofan and quality</h2>
+          <p class="certification__sub-header">Color test, salmonbellies ensures clients demand are met and that producer delivers accordingly</p>
+          <div class="certifications__certificate-wrapper">
+            <ul class="certifications__list">
+              <li class="certifications__card">
+                <article class="certifications__card"><img class="certifications__card-img" src="static/img/certificate-msc.png" alt="msc-c-55443" height="84" width="235"><a class="certifications__card-link" href="#">We are MSC certified(MSC-C-55443), look for the blue MSC label</a></article>
+              </li>
+              <li class="certifications__card">
+                <article class="certifications__card"><img class="certifications__card-img" src="static/img/certificate-asc.png" alt="asc-c-01179" height="84" width="181"><a class="certifications__card-link" href="#">We are ASC certified(ASC-C-01179), look for the aqua green ASC logo</a></article>
+              </li>
+            </ul>
+            <p class="certifications__desc">
+              Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. 
+              We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. 
+              We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively 
+              managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="fish-locations">
+        <div class="fish-locations__center-wrapper">
+          <h2 class="fish-locations__header">Fish by Kalaneuvos are caught or farmed primarily in the following locations</h2>
+          <ul class="fish-locations__locations-list">
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Trout</h3>
+              <p class="fish-locations___location-desc">Farmed on the Finnish coast, in Åland and in Sweden</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Salmon</h3>
+              <p class="fish-locations___location-desc">Farmed on the Lofoten Islands region of Northern Norway and on the north side of the Lofoten Islands</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Whitefish (farmed)</h3>
+              <p class="fish-locations___location-desc">The Archipelago Sea</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Whitefish (wild)</h3>
+              <p class="fish-locations___location-desc">Lake Lappajärvi, Lake Kyrösjärvi, the Archipelago Sea, Åland</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Whitefish (Canada)</h3>
+              <p class="fish-locations___location-desc">The Canadian Great Lakes</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Baltic herring</h3>
+              <p class="fish-locations___location-desc">The Bothnian Sea and the Archipelago Sea</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Vendace</h3>
+              <p class="fish-locations___location-desc">Lake Puruvesi Lake Saimaa Lake Pyhäjärvi in Säkylä</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Northern pike</h3>
+              <p class="fish-locations___location-desc">Lake Lappajärvi Lake Kyrösjärvi Lake Pyhäjärvi in Säkylä</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Pike perch (freshwater)</h3>
+              <p class="fish-locations___location-desc">Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi Lake Vesijärvi in Lahti</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Pike perch (sea)</h3>
+              <p class="fish-locations___location-desc">The Vaasa sea area, the Turku Archipelago</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Perch (freshwater)</h3>
+              <p class="fish-locations___location-desc">Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Perch (sea)</h3>
+              <p class="fish-locations___location-desc">Kvarken</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Brown trout (farmed)</h3>
+              <p class="fish-locations___location-desc">Åland</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Arctic char (farmed)</h3>
+              <p class="fish-locations___location-desc">Sweden</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Mackerel</h3>
+              <p class="fish-locations___location-desc">Ireland and Scotland, grown in the north-east Atlantic</p>
+            </li>
+            <li class="fish-location__location-card">
+              <h3 class="fish-locations__location-header">Cod</h3>
+              <p class="fish-locations___location-desc">Sweden and Denmark area, the North-East Atlantic</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recipes">
+        <div class="recipes__center-wrapper">
+          <h2 class="recipes__header">Recipes</h2>
+          <ul class="recipes__list">
+            <li>
+              <article class="recipes__recipe-card"><img class="recipes__recipe-img" src="static/img/recipe-card-1.jpg" width="555" height="162">
+                <h3 class="recipes__recipe-header"><a href="#">Wester Ross seared salmon loin, fennel pollen and sweet onion</a></h3>
+                <p class="recipes__recipe-desc">This delicious starter by Michelin-starred chef Lisa Allen has many elements that come together to create a striking dish, bursting with vibrant colours. To give the salmon a smoky, charred flavour the chef finishes the dish by...</p>
+              </article>
+            </li>
+            <li>
+              <article class="recipes__recipe-card"><img class="recipes__recipe-img" src="static/img/recipe-card-2.jpg" width="555" height="162">
+                <h3 class="recipes__recipe-header"><a href="#">Wester Ross seared salmon loin, fennel pollen and sweet onion</a></h3>
+                <p class="recipes__recipe-desc">This delicious starter by Michelin-starred chef Lisa Allen has many elements that come together to create a striking dish, bursting with vibrant colours. To give the salmon a smoky, charred flavour the chef finishes the dish by...</p>
+              </article>
+            </li>
+          </ul><a class="recipes__all-recipes-link" href="#"></a>
+        </div>
+      </section>
+      <section class="trout-new-salmon">
+        <div class="trout-new-salmon__center-wrapper">
+          <h2 class="trout-new-salmon__header">Why trout is the new salmon</h2>
+          <p class="trout-new-salmon__desc">Trout tend to more firm in the muscle tissue then salmon when cooking, it grows faster in aquaculture then salmon and we have ready trout for delivery all year around to the markets</p>
+        </div>
+      </section>
+      <section class="markets">
+        <div class="markets__center-wrapper">
+          <h2 class="markets__header">Markets</h2>
+          <div class="markets__content-wrapper"><img class="markets__img" src="static/img/market.jpg" width="518" height="371" alt="Man golds filet">
+            <div class="markets__text-wrapper">
+              <p class="markets__text">
+                 Salmonbellies focuses on Switzerland, and Israel by all-in kosher products on demand with rabbinical supervision.</p>
+              <p class="markets__text">
+                 But just to let you know that our products are approved for import to China, so alot of focus is streamlined towards the Asian markets herein;
+                Japan, China, Taiwan, South Korea, Thailand, The Philippines, Vietnam and India.
+              </p>
+              <p class="markets__text">
+                 Our main focus for smolt sales is towards Norwegian trout fish farmers, and Canada for rainbow trout roe.</p>
+              <p class="markets__text">
+                The team Salmonbellies is always open to help and assist with our competence and skills within aquaculture in other countries and markets.
+                Mr. Alexander Refsnes have close ties to researchers in Norway on fish health and fish pathology related to aquaculture of trout and salmon 
+                from the time he studied for his degree in Aquaculture, and where he discovered his new passion for the aquaculture industry on salmon species, and feed regimes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__center-wrapper">
+          <h2 class="news__header">News</h2>
+          <ul class="news__news-list">
+            <li>
+              <article class="news__news-card">
+                <h3 class="news__news-header"><a href="#">Expo global 2019</a></h3>
+                <p class="news__news-desc">The team of Salmonbellies enjoyed the seafood Expo global 2019, and thank you to all participants who filled in our questionnaire during our many meetings in the crowdy melting pot in Bruxelle this year</p>
+              </article>
+            </li>
+            <li>
+              <article class="news__news-card">
+                <h3 class="news__news-header"><a href="#">A new company in Minsk</a></h3>
+                <p class="news__news-desc">4th. July 2019, team of Salmonbellies launches a new company in Minsk, Belarus namely Lyxfish CJSCthis company will act as Scandinavia`s fish farmers gateway to Belarus export markets, with the main focus on trout and salmon products.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__center-wrapper">
+        <div class="page-footer__logo-container"><img class="page-footer__logo" src="static/img/logo.svg" width="67" height="40">
+          <h1 class="page-footer__header">Salmonbellies AS</h1><span class="page-footer__tagline">Trout is the new salmon</span>
+        </div><span class="page-footer__kosher">Kosher per demand</span>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-link page-footer__social-link--facebook"><a href="#">Facebook</a></li>
+          <li class="page-footer__social-link page-footer__social-link--in"><a href="#">in</a></li>
+        </ul>
+        <p class="page-footer__copyright">Copyright SalmonBellies.no 2019, All Rights Reserved</p>
+      </div>
+    </footer>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
   </body>

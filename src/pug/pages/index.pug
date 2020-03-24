@@ -5,48 +5,178 @@ mixin nav-item(text)
         a.header-nav__link(href="#")= text
     
 mixin lang-choice(lang)
-    li.header__lang-list
-        a.header__lang-btn(href="#")= lang
+    li.header-lang__item
+        a.header-lang__link(href="#")= lang
+
+mixin main-prod-card(headerTop, headerBottom, imgLink, link)
+    li
+        article.main-prod__card
+            a.main-prod__card-wrapper-link(href=link)
+                img.main-prod__card-img(src=imgLink alt=name width="246" height="154")
+                h3.main-prod__card-header= headerTop
+                h3.main-prod__card-header= headerBottom
+
+mixin fish-locations-card(header, desc)
+    li.fish-location__location-card
+        h3.fish-locations__location-header= header
+        p.fish-locations___location-desc= desc
+
+mixin recipe-card(header, link, imgLink, imgALt, desc)
+    li
+        article.recipes__recipe-card
+            img.recipes__recipe-img(src=imgLink alt=imgAlt width="555" height="162")
+            h3.recipes__recipe-header
+                a(href=link)= header
+            p.recipes__recipe-desc= desc
+
+mixin news-card(header, desc)
+    li
+        article.news__news-card
+            h3.news__news-header
+                a(href="#")= header
+            p.news__news-desc= desc
 
 html(lang="ru-RU")
     head
         title Salmonbellies
         link(rel='stylesheet', href="static/css/main.css")
     body
-        header.header
-            .header__top
-                nav.header-nav
-                    ul.header-nav__list
-                        +nav-item("Our products")
-                        +nav-item("Recepies")
-                        +nav-item("Services")
-                        +nav-item("The promise")
-                        +nav-item("Origin")
-                        +nav-item("Markets")
-                        +nav-item("CSR")
-                        +nav-item("Company")
-                        +nav-item("Contacts")
-                .header-lang
-                    ul.header-lang__list
-                        +lang-choice("English")
-                        +lang-choice("Russian")
-                        +lang-choice("Chinese")
-                    button.header-lang__pd-btn
-            .header__bottom
-                .header-logo
-                    img.header-logo__img(src="#" width="132" height="77")
-                    h1.header-logo__header Salmonbellies AS
-                    p.header-logo__tagline Trout is the new salmon
-                .header__desc
-                    p Salmonbellies and Lyxfish commit to sell at NO higer prices then quoted from out partner Kalaneuvos 
+        header.page-header(class="page-header--index")
+            .page-header__center-wrapper
+                .page-header__top
+                    nav.header-nav
+                        ul.header-nav__list
+                            +nav-item("Our products")
+                            +nav-item("Recepies")
+                            +nav-item("Services")
+                            +nav-item("The promise")
+                            +nav-item("Origin")
+                            +nav-item("Markets")
+                            +nav-item("CSR")
+                            +nav-item("Company")
+                            +nav-item("Contacts")
+                    .header-lang
+                        ul.header-lang__list
+                            +lang-choice("English")
+                        button.header-lang__pd-btn
+                .page-header__bottom
+                    .page-header__logo
+                        img.page-header__logo-img(src="static/img/logo.svg" width="132" height="119")
+                        h1.page-header__logo-header Salmonbellies AS
+                        p.page-header__logo-tagline Trout is the new salmon
+                    .page-header__desc
+                        p Salmonbellies and Lyxfish commit to sell at NO higer prices then quoted from out partner Kalaneuvos 
         
         main.main-content
-            section.main-product
-                h2.block-header(class="main-prod__header") Main fish products
-                p.main-prod__desc The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus
-                 
-
-
+            section.main-prod
+                .main-prod__center-wrapper
+                    h2.main-prod__header Main fish products
+                    p.main-prod__desc The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus
+                    ul.main-prod__card-list
+                        +main-prod-card("Trout whole", "Oncorhynchus mikiss", "static/img/main-prod-card-img-1@1x.png", "#")
+                        +main-prod-card("Trout fillet", "Oncorhynchus mikiss", "static/img/main-prod-card-img-2@1x.png", "#")
+                        +main-prod-card("Salmon whole", "Salmo salar", "static/img/main-prod-card-img-3@1x.png", "#")
+                        +main-prod-card("Salmon c-cut fillet", "Salmo salar", "static/img/main-prod-card-img-4@1x.png", "#")
+                        +main-prod-card("Whitefish", "Coregonus lavaretus", "static/img/main-prod-card-img-5@1x.png", "#")
+                        +main-prod-card("Whitefish fillet without", "skin and scaled", "static/img/main-prod-card-img-6@1x.png", "#")
+                        +main-prod-card("Farmed brown trout", "Salmo trutta", "static/img/main-prod-card-img-7@1x.png", "#")
+                        +main-prod-card("Farmed brown trout fillet", "Salmo trutta", "static/img/main-prod-card-img-8@1x.png", "#")
+                    a.main-prod__all-prod-link(href="#") View all product
+            section.brochures
+                .brochures__center-wrapper
+                    h2.brochures__header Our brochures
+                    ul.brochures__link-list
+                        li.brochures__link
+                            a(href="#") Chinese version download
+                        li.brochures__link
+                            a(href="#") English version download
+            section.certifications
+                .certifications__center-wrapper
+                    h2.certifications__header Salmofan and quality
+                    p.certification__sub-header Color test, salmonbellies ensures clients demand are met and that producer delivers accordingly
+                    .certifications__certificate-wrapper
+                        ul.certifications__list
+                            li.certifications__card
+                                article.certifications__card
+                                    img.certifications__card-img(src="static/img/certificate-msc.png" alt="msc-c-55443" height="84" width="235")
+                                    a.certifications__card-link(href="#") We are MSC certified(MSC-C-55443), look for the blue MSC label
+                            li.certifications__card
+                                article.certifications__card
+                                    img.certifications__card-img(src="static/img/certificate-asc.png" alt="asc-c-01179" height="84" width="181")
+                                    a.certifications__card-link(href="#") We are ASC certified(ASC-C-01179), look for the aqua green ASC logo
+                        p.certifications__desc
+                            | Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. 
+                            | We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. 
+                            | We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively 
+                            | managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.
+            section.fish-locations
+                .fish-locations__center-wrapper
+                    h2.fish-locations__header Fish by Kalaneuvos are caught or farmed primarily in the following locations
+                    ul.fish-locations__locations-list
+                        +fish-locations-card("Trout", "Farmed on the Finnish coast, in Åland and in Sweden")
+                        +fish-locations-card("Salmon", "Farmed on the Lofoten Islands region of Northern Norway and on the north side of the Lofoten Islands")
+                        +fish-locations-card("Whitefish (farmed)", "The Archipelago Sea")
+                        +fish-locations-card("Whitefish (wild)", "Lake Lappajärvi, Lake Kyrösjärvi, the Archipelago Sea, Åland")
+                        +fish-locations-card("Whitefish (Canada)", "The Canadian Great Lakes")
+                        +fish-locations-card("Baltic herring", "The Bothnian Sea and the Archipelago Sea")
+                        +fish-locations-card("Vendace", "Lake Puruvesi Lake Saimaa Lake Pyhäjärvi in Säkylä")
+                        +fish-locations-card("Northern pike", "Lake Lappajärvi Lake Kyrösjärvi Lake Pyhäjärvi in Säkylä")
+                        +fish-locations-card("Pike perch (freshwater)", "Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi Lake Vesijärvi in Lahti")
+                        +fish-locations-card("Pike perch (sea)", "The Vaasa sea area, the Turku Archipelago")
+                        +fish-locations-card("Perch (freshwater)", "Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi")
+                        +fish-locations-card("Perch (sea)", "Kvarken")
+                        +fish-locations-card("Brown trout (farmed)", "Åland")
+                        +fish-locations-card("Arctic char (farmed)", "Sweden")
+                        +fish-locations-card("Mackerel", "Ireland and Scotland, grown in the north-east Atlantic")
+                        +fish-locations-card("Cod", "Sweden and Denmark area, the North-East Atlantic")
+            section.recipes
+                .recipes__center-wrapper
+                    h2.recipes__header Recipes
+                    ul.recipes__list
+                        +recipe-card("Wester Ross seared salmon loin, fennel pollen and sweet onion","#", "static/img/recipe-card-1.jpg", "Wester Ross seared salmon loin", "This delicious starter by Michelin-starred chef Lisa Allen has many elements that come together to create a striking dish, bursting with vibrant colours. To give the salmon a smoky, charred flavour the chef finishes the dish by...")
+                        +recipe-card("Wester Ross seared salmon loin, fennel pollen and sweet onion","#", "static/img/recipe-card-2.jpg", "Wester Ross seared salmon loin", "This delicious starter by Michelin-starred chef Lisa Allen has many elements that come together to create a striking dish, bursting with vibrant colours. To give the salmon a smoky, charred flavour the chef finishes the dish by...")
+                    a.recipes__all-recipes-link(href="#")
+            section.trout-new-salmon
+                .trout-new-salmon__center-wrapper
+                    h2.trout-new-salmon__header Why trout is the new salmon
+                    p.trout-new-salmon__desc Trout tend to more firm in the muscle tissue then salmon when cooking, it grows faster in aquaculture then salmon and we have ready trout for delivery all year around to the markets
+            section.markets
+                .markets__center-wrapper
+                    h2.markets__header Markets
+                    .markets__content-wrapper
+                        img.markets__img(src="static/img/market.jpg" width="518" height="371" alt="Man golds filet")
+                        .markets__text-wrapper
+                            p.markets__text 
+                                | Salmonbellies focuses on Switzerland, and Israel by all-in kosher products on demand with rabbinical supervision.
+                            p.markets__text 
+                                | But just to let you know that our products are approved for import to China, so alot of focus is streamlined towards the Asian markets herein;
+                                | Japan, China, Taiwan, South Korea, Thailand, The Philippines, Vietnam and India.
+                            p.markets__text 
+                                | Our main focus for smolt sales is towards Norwegian trout fish farmers, and Canada for rainbow trout roe.
+                            p.markets__text
+                                | The team Salmonbellies is always open to help and assist with our competence and skills within aquaculture in other countries and markets.
+                                | Mr. Alexander Refsnes have close ties to researchers in Norway on fish health and fish pathology related to aquaculture of trout and salmon 
+                                | from the time he studied for his degree in Aquaculture, and where he discovered his new passion for the aquaculture industry on salmon species, and feed regimes.
+            section.news
+                .news__center-wrapper
+                    h2.news__header News
+                    ul.news__news-list
+                        +news-card("Expo global 2019", "The team of Salmonbellies enjoyed the seafood Expo global 2019, and thank you to all participants who filled in our questionnaire during our many meetings in the crowdy melting pot in Bruxelle this year")
+                        +news-card("A new company in Minsk", "4th. July 2019, team of Salmonbellies launches a new company in Minsk, Belarus namely " + "Lyxfish CJSC" + "this company will act as Scandinavia`s fish farmers gateway to Belarus export markets, with the main focus on trout and salmon products.")
+        footer.page-footer
+            .page-footer__center-wrapper
+                .page-footer__logo-container
+                    img.page-footer__logo(src="static/img/logo.svg" width="67" height="40")
+                    h1.page-footer__header Salmonbellies AS
+                    span.page-footer__tagline Trout is the new salmon
+                span.page-footer__kosher Kosher per demand
+                ul.page-footer__social-list
+                    li.page-footer__social-link(class="page-footer__social-link--facebook")
+                        a(href="#") Facebook
+                    li.page-footer__social-link(class="page-footer__social-link--in")
+                        a(href="#") in
+                p.page-footer__copyright Copyright SalmonBellies.no 2019, All Rights Reserved
+            
         script(src='static/js/libs.min.js')
         script(src='static/js/main.js')
     

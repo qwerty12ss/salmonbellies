@@ -1,0 +1,73 @@
+.certifications {
+    background-color: $bg-color-block;
+    margin-bottom: 40px;
+}
+
+.certifications__center-wrapper {
+    width: $width-content-desktop;
+    margin: 0 auto;
+    padding: 50px 70px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certifications__header {
+    @include fontBlockHeader;
+
+    line-height: 44px;
+    margin: 0;
+    margin-bottom: 18px;
+    align-self: center;
+}
+
+.certification__sub-header {
+    @include fontMain($font-size-main);
+
+    line-height: 24px;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.certifications__certificate-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.certifications__list {
+    list-style: none;
+    padding: 17px 0px 0px 0px;
+    width: 545px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.certifications__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.certifications__card-img {
+    margin-bottom: 15px;
+}
+
+.certifications__card-link {
+    @include montserratMedium($font-color-second, $font-size-certifications-link);
+
+    text-decoration: none;
+    line-height: 24px;
+    width: 252px;
+    text-transform: uppercase;
+}
+
+.certifications__desc {
+    @include fontMain($font-size-main);
+
+    line-height: 24px;
+    width: 528px;
+    align-self: flex-end;
+}

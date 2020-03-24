@@ -1,7 +1,33 @@
-@import 'global/var.scss';
-@import 'global/fonts.scss';
-@import 'global/mixins.scss';
-@import 'global/libs.scss';
+* {
+    box-sizing: border-box;
+}
+
+@import "global/var.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/libs.scss";
+@import "blocks/certifications.scss";
+@import "blocks/fish-locations.scss";
+@import "blocks/main-content.scss";
+@import "blocks/main-prod.scss";
+@import "blocks/markets.scss";
+@import "blocks/news.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/recipes.scss";
+@import "blocks/trout-new-salmon.scss";
+@import "blocks/brochures.scss";
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 .slider {
     width: 600px;
@@ -18,4 +44,8 @@
 .slider-item:nth-of-type(4) {
     background-color: yellow;
 
+}
+
+.main-prod__wrapper-link {
+    display: block;
 }

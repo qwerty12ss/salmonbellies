@@ -1,0 +1,93 @@
+.brochures__center-wrapper {
+    width: $width-content-desktop;
+    margin: 0 auto;
+    padding: 50px 70px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brochures__header {
+    @include fontBlockHeader;
+
+    line-height: 44px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 396px;
+    text-align: center;
+}
+
+.brochures__header::after {
+    display: block;
+    content: "";
+    width: 51px;
+    height: 6px;
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.brochures__header::before {
+    display: block;
+    content: "";
+    width: 51px;
+    height: 6px;
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+.brochures__link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 744px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.brochures__link a{
+    @include montserratMedium($font-color-second, $font-size-btn);
+
+    box-sizing: border-box;
+    width: 356px;
+    line-height: 24px;
+    padding: 12px 25px 10px 70px;
+    border: 1px solid #1C75B7;
+    border-radius: 30px;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+}
+
+.brochures__link a::after {
+    display: block;
+    content: "";
+    width: 32px;
+    height: 24.5px;
+    background-image: url("../img/btn-book.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 12.2px);
+    left: 23px;
+}
+
+.brochures__link a:visited{
+    color: $font-color-second;
+    text-decoration: none;
+}
+
+
+
+

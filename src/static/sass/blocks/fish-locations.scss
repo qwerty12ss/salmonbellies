@@ -1,0 +1,66 @@
+.fish-locations {
+    background-color: $bg-color-block;
+    background-image: url("../img/fish-location-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 40px;
+}
+
+.fish-locations__center-wrapper {
+    width: $width-content-desktop;
+    margin: 0 auto;
+    padding: 50px 10px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fish-locations__header {
+    @include fontBlockHeader;
+
+    line-height: 44px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 736px;
+    align-self: center;
+}
+
+.fish-locations__locations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+
+.fish-location__location-card {
+    width: 262px;
+    min-height: 120px;
+    background-color: white;
+    padding: 15px 6px 0px 15px;
+    margin: 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 35, 126, 0.06);
+}
+
+.fish-locations__location-header {
+    @include montserratMedium($font-color-second, $font-size-higer);
+
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.fish-locations___location-desc{
+    @include fontMain($font-size-lower);
+    
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}

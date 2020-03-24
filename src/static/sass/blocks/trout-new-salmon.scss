@@ -1,0 +1,34 @@
+.trout-new-salmon {
+    background-color: $bg-color-block;
+    background-image: url("../img/trout-salmon-bg@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.trout-new-salmon__center-wrapper {
+    width: $width-content-desktop;
+    margin: 0 auto;
+    padding: 70px 10px 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trout-new-salmon__header {
+    @include fontBlockHeader;
+
+    line-height: 44px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+.trout-new-salmon__desc {
+    @include fontMain($font-size-higer);
+
+    line-height: 32px;
+    margin: 0;
+    width: 585px;
+    text-align: center;
+}
